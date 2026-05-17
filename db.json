@@ -1,0 +1,44 @@
+{
+  "favorites": [
+    {
+      "name": "Іф",
+      "country": "FR",
+      "state": "Normandy",
+      "lat": 49.1380679,
+      "lon": -0.3496385,
+      "id": 1
+    },
+    {
+      "name": "Słoneczne",
+      "country": "PL",
+      "state": "West Pomeranian Voivodeship",
+      "lat": 53.379459,
+      "lon": 14.6511825,
+      "id": 3
+    },
+    {
+      "name": "Фес",
+      "country": "MA",
+      "state": "",
+      "lat": 34.0346534,
+      "lon": -5.0161926,
+      "id": 4
+    },
+    {
+      "name": "Інсбрук",
+      "country": "AT",
+      "state": "Tyrol",
+      "lat": 47.2654296,
+      "lon": 11.3927685,
+      "id": 5
+    },
+    {
+      "name": "Харків",
+      "country": "UA",
+      "state": "Kharkiv Oblast",
+      "lat": 49.9923181,
+      "lon": 36.2310146,
+      "id": 6
+    }
+  ]
+}
