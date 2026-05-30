@@ -1,9 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+export const FORECAST_PERIODS = {
+  DAY: '24h',
+  WEEK: 'week',
+};
+
 const initialState = {
   searchValue: '',
   selectedCity: null,
-  period: '24h',
+  period: FORECAST_PERIODS.DAY,
 };
 
 const weatherSlice = createSlice({
@@ -22,7 +27,7 @@ const weatherSlice = createSlice({
     resetWeatherSearch: (state) => {
       state.searchValue = '';
       state.selectedCity = null;
-      state.period = '24h';
+      state.period = FORECAST_PERIODS.DAY;
     },
   },
 });

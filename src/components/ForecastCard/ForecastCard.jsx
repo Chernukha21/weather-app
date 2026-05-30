@@ -1,6 +1,7 @@
 import { Box, Button, ButtonGroup, Card, CardContent } from '@mui/material';
 
 import ForecastChart from '../ForecastChart/ForecastChart';
+import { FORECAST_PERIODS } from '../../store/slices/weatherSlice.js';
 
 const ForecastCard = ({ data, period, setPeriod }) => {
   return (
@@ -9,15 +10,19 @@ const ForecastCard = ({ data, period, setPeriod }) => {
         <Box sx={{ mb: 2 }}>
           <ButtonGroup>
             <Button
-              variant={period === '24h' ? 'contained' : 'outlined'}
-              onClick={() => setPeriod('24h')}
+              variant={
+                period === FORECAST_PERIODS.DAY ? 'contained' : 'outlined'
+              }
+              onClick={() => setPeriod(FORECAST_PERIODS.DAY)}
             >
               На 24 години
             </Button>
 
             <Button
-              variant={period === 'week' ? 'contained' : 'outlined'}
-              onClick={() => setPeriod('week')}
+              variant={
+                period === FORECAST_PERIODS.WEEK ? 'contained' : 'outlined'
+              }
+              onClick={() => setPeriod(FORECAST_PERIODS.WEEK)}
             >
               На тиждень
             </Button>
